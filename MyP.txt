@@ -1,0 +1,122 @@
+class User1 {
+    private final String username;
+
+    public User1(String username) {
+        this.username = username;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+}
+
+class Admin {
+    public User1 user;
+    public String name;
+
+    public Admin(User1 user, String name) {
+        this.user = user;
+        this.name = name;
+    }
+
+    public void printDetails() {
+        System.out.println("Admin Details:");
+        System.out.println("Username: " + user.getUsername());
+        System.out.println("Name: " + name);
+    }
+}
+
+public class AdminManagementSystem {
+
+    public static void createFaculty(String username, String name) {
+        // Implement Create Faculty
+        // You can create a new Faculty object and add it to your data structure.
+    }
+
+    public static void createStudent(String username, String name) {
+        // Implement Create Student
+        // You can create a new Student object and add it to your data structure.
+    }
+
+    public static void searchFaculty() {
+        // Implement Search A Faculty
+        // Search for a Faculty using the provided username.
+    }
+
+    public static void searchStudent() {
+        // Implement Search A Student
+        // Search for a Student using the provided username.
+    }
+
+    public static void printAllFacultyDetails() {
+        // Implement Print Details of all Faculties
+        // Print details of all faculty members.
+    }
+
+    public static void printAllStudentDetails() {
+        // Implement Print Details of all Students
+        // Print details of all students.
+    }
+
+    public static void printAllUserData() {
+        // Implement Print all User Data
+        // Print details of all users (both faculty and students).
+    }
+
+    public static void AdminManagementSystem(String[] args) {
+        boolean exit = false;
+
+        while (true) {
+            System.out.println("1. Create Faculty");
+            System.out.println("2. Create Student");
+            System.out.println("3. Search A Faculty");
+            System.out.println("4. Search A Student");
+            System.out.println("5. Print Details of all Faculties");
+            System.out.println("6. Print Details of all Students");
+            System.out.println("7. Print all User Data");
+            System.out.println("8. Exit");
+
+            System.out.println("Enter the No.");
+
+            // Read user input using your preferred method (e.g., command-line arguments, file input, etc.).
+
+            int input = 0; /* Read input from your preferred source */;
+
+            switch (input) {
+                case 1:
+                    createFaculty(/* Pass required parameters */);
+                    break;
+                case 2:
+                    createStudent(/* Pass required parameters */);
+                    break;
+                case 3:
+                    searchFaculty(/* Pass required parameters */);
+                    break;
+                case 4:
+                    searchStudent(/* Pass required parameters */);
+                    break;
+                case 5:
+                    printAllFacultyDetails();
+                    break;
+                case 6:
+                    printAllStudentDetails();
+                    break;
+                case 7:
+                    printAllUserData();
+                    break;
+                case 8:
+                    exit = true;
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    break;
+            }
+        }
+    }
+
+    private static void createStudent() {
+    }
+
+    private static void createFaculty() {
+    }
+}
