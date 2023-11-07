@@ -1,0 +1,2 @@
+stud1,Raj,java
+stud2,Nia,SDM
